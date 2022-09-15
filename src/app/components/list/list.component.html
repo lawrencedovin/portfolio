@@ -1,0 +1,12 @@
+<div
+  class="search-results"
+  infiniteScroll
+  [infiniteScrollDistance]="scrollDistance"
+  [infiniteScrollThrottle]="throttle"
+  (scrolled)="onScrollDown()"
+>
+  <app-item
+    *ngFor="let project of currentProjects"
+    [project]="project">
+  </app-item>
+</div>

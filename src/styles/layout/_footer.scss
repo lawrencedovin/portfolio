@@ -1,0 +1,26 @@
+/* Footer */
+@use '../abstracts/variables';
+.footer {
+  background: linear-gradient(90deg, variables.$color-green 0%, variables.$color-blue 100%);
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+
+  &-fix {
+      height: 32rem;
+  }
+
+  &__text {
+      font-size: variables.$font-size-small;
+      font-weight: variables.$light;
+      display: inline-flex;
+      align-items: center;
+  }
+
+  &__made-with {
+      color: variables.$color-white;
+  }
+
+  &__icon {
+      margin: auto .8rem;
+  }
+}

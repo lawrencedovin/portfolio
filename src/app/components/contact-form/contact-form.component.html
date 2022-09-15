@@ -1,0 +1,63 @@
+<div class="contact-form__container d-flex align-items-center justify-content-center" #contactForm id="contact-form">
+  <div class="contact-form__contact">
+    <h1 class="contact-form__contact-title">
+      Contact
+    </h1>
+    <ul class="contact-form__contact-details-container">
+      <li class="contact-form__contact-details">
+        <span><i class="fas fa-map-marker-alt contact-form__contact-icons"></i>Bowie, Maryland</span>
+      </li>
+      <li class="contact-form__contact-details">
+        <span><i class="fas fa-phone contact-form__contact-icons"></i>(610) 579-1888</span>
+      </li>
+      <li class="contact-form__contact-details">
+        <span><i class="fas fa-envelope contact-form__contact-icons"></i>lawrence.dovin@hotmail.com</span>
+      </li>
+    </ul>
+    <ul class="contact-form__social-container">
+      <li class="contact-form__social">
+        <a href="https://www.linkedin.com/in/lawrence-dovin/" target="_blank" rel="noreferrer">
+          <i class="bi bi-linkedin contact-form__social-icons contact-form__social-icons"></i>
+        </a>
+      </li>
+      <li class="contact-form__social">
+        <a href="https://github.com/lawrencedovin" target="_blank" rel="noreferrer">
+          <i class="bi bi-github contact-form__social-icons"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <form
+    target="_blank"
+    action="https://formsubmit.co/eddcfb2d526e3a057384fb823c55341e"
+    method="POST"
+    class="contact-form"
+    >
+    <h1 class="contact-form__title">Get in Touch!</h1>
+    <div class="contact-form__description-container">
+      <span class="contact-form__description">Feel free to <i class="fa-solid fa-droplet contact-form__description-icon"></i> a Message</span>
+    </div>
+    <div class="contact-form__input-container">
+      <input
+        type="text"
+        class="contact-form__input form-control"
+        name="fullName"
+        placeholder="Full Name"
+        required
+      >
+    </div>
+    <div class="contact-form__input-container">
+      <input
+        type="email"
+        class="contact-form__input form-control"
+        name="email"
+        placeholder="Email"
+        required
+      >
+    </div>
+    <div class="contact-form__input-container">
+      <textarea class="contact-form__text-area form-control" placeholder="Enter Message..." name="message" required rows="7"></textarea>
+    </div>
+    <button type="submit" class="contact-form__button btn">SEND MESSAGE</button>
+  </form>
+</div>

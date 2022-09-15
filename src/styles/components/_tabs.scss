@@ -1,0 +1,122 @@
+/* Tabs */
+@use '../abstracts/variables';
+
+.nav-tabs {
+  border-bottom: 1px solid variables.$color-grey-light;
+  &__container {
+    margin-top: 4rem;
+    display: inline-block;
+  }
+}
+
+.nav-link {
+  &-inactive,
+  &-active {
+    padding: .8rem 1.6rem;
+    border-width: 1px !important;
+    font-family: variables.$font-primary;
+    font-size: variables.$font-size-small;
+    font-weight: variables.$regular;
+  }
+
+  &-inactive {
+    color: variables.$color-grey-light;
+    &:hover {
+      border-color:  variables.$color-grey-light variables.$color-grey-light variables.$color-white !important;
+    }
+  }
+
+  &-active {
+    color: variables.$color-white !important;
+    &--all {
+      background: variables.$color-green !important;
+      &:hover,
+      &:focus {
+        background: variables.$color-green !important;
+        border-color: variables.$color-green !important;
+      }
+    }
+
+    &--javascript {
+      background: variables.$color-yellow--javascript !important;
+      &:hover,
+      &:focus {
+        background: variables.$color-yellow--javascript !important;
+        border-color: variables.$color-yellow--javascript !important;
+      }
+    }
+
+    &--angular {
+      background: variables.$color-red--angular !important;
+      &:hover,
+      &:focus {
+        background: variables.$color-red--angular !important;
+        border-color: variables.$color-red--angular !important;
+      }
+    }
+
+    &--react {
+      background: variables.$color-blue--react !important;
+      &:hover,
+      &:focus {
+        background: variables.$color-blue--react !important;
+        border-color: variables.$color-blue--react !important;
+      }
+    }
+
+    &--nodejs {
+      background: variables.$color-green--node !important;
+      &:hover,
+      &:focus {
+        background: variables.$color-green--node !important;
+        border-color: variables.$color-green--node !important;
+      }
+    }
+
+    &--express {
+      background: variables.$color-orange--express !important;
+      &:hover,
+      &:focus {
+        background: variables.$color-orange--express !important;
+        border-color: variables.$color-orange--express !important;
+      }
+    }
+
+    &--python {
+      background: variables.$color-blue--python !important;
+      border-color: variables.$color-blue--python !important;
+      &:hover,
+      &:focus {
+        background: variables.$color-blue--python !important;
+        border-color: variables.$color-blue--python !important;
+      }
+    }
+
+    &--flask {
+      background: variables.$color-black--flask !important;
+      &:hover,
+      &:focus {
+        background: variables.$color-black--flask !important;
+        border-color: variables.$color-black--flask !important;
+      }
+    }
+
+    &--sass {
+      background: variables.$color-pink--sass !important;
+      &:hover,
+      &:focus {
+        background: variables.$color-pink--sass !important;
+        border-color: variables.$color-pink--sass !important;
+      }
+    }
+
+    &--bootstrap {
+      background: variables.$color-purple--bootstrap !important;
+      &:hover,
+      &:focus {
+        background: variables.$color-purple--bootstrap !important;
+        border-color: variables.$color-purple--bootstrap !important;
+      }
+    }
+  }
+}

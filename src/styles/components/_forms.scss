@@ -1,0 +1,127 @@
+/* Forms */
+@use '../abstracts/variables';
+.contact-form {
+  padding: 5.6rem 4.8rem;
+  padding-left: 24rem;
+  display: inline-block;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  &__contact {
+      margin-right: -20rem;
+      padding: 5.6rem 4.8rem;
+      display: inline-block;
+      background: linear-gradient(161.18deg, variables.$color-green-light -9.31%, rgba(1, 107, 91, 0) 108.92%);
+      filter: drop-shadow(0px 6px 20px rgba(37, 133, 154, 0.3));
+
+        &-title,
+        &-details {
+            font-weight: variables.$light;
+            color: variables.$color-white;
+            text-align: left;
+            list-style: none;
+        }
+        &-title {
+            font-size: variables.$font-size-medium;
+            font-weight: variables.$medium;
+            margin-bottom: 3.2rem;
+        }
+        &-details {
+            font-size: variables.$font-size-small;
+            font-weight: variables.$light;
+            &-container {
+              margin: 0;
+              padding: 0;
+            }
+        }
+        &-details:not(:last-child) {
+            padding-bottom: 2.4rem;
+        }
+        &-icons{
+          margin-right: 1.6rem;
+        }
+  }
+
+  &__social {
+    display: inline;
+    &:not(:last-child) {
+      margin-right: 2.4rem;
+    }
+
+    &-container {
+      margin-top: 3.2rem;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+    }
+
+    &-icons {
+      font-size: variables.$font-size-medium;
+      color: variables.$color-white;
+      &:hover {
+        color: variables.$color-blue;
+      }
+    }
+  }
+
+  &__container {
+    // margin-top: 25.6rem;
+  }
+
+  &__input,
+  &__text-area {
+    width: 32rem;
+    font-size: variables.$font-size-small;
+    font-weight: variables.$light;
+    color: variables.$color-blue;
+    border: solid 1px variables.$color-grey;
+    resize: none;
+
+    &:focus {
+      color: variables.$color-blue;
+      border-color: variables.$color-blue;
+    }
+
+    &::placeholder {
+      color: variables.$color-grey;
+    }
+
+    &-container {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__title,
+  &__description-container {
+    color: variables.$color-black;
+    text-align: start;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: variables.$font-size-medium;
+    font-weight: variables.$medium;
+  }
+
+  &__description {
+    font-size: variables.$font-size-small;
+    color: variables.$color-grey;
+    font-weight: variables.$regular;
+
+    &-container {
+      margin: .8rem auto 3.2rem;
+    }
+
+    &-icon {
+      color: variables.$color-blue;
+    }
+  }
+}
+
+input.ng-dirty.ng-invalid {
+  border-color: variables.$color-red;
+}
+
+.error {
+  margin-top: .8rem;
+  font-size: variables.$font-size-small;
+  color: variables.$color-red;
+}

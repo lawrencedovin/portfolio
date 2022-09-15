@@ -1,0 +1,146 @@
+/* Buttons */
+@use '../abstracts/variables';
+.btn {
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-size: variables.$font-size-small;
+  font-weight: variables.$light;
+  text-transform: uppercase;
+  padding: 1.2rem;
+  width: 16rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 3.2rem;
+
+  &:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0 0);
+  }
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 3.2rem;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.hero {
+  &__button {
+    background-color: variables.$color-white;
+    color: variables.$color-blue;
+
+    &:hover {
+      background-image: none;
+    }
+
+    & span {
+      color: variables.$color-blue;
+    }
+
+    & span:after {
+      content: '☎️';
+    }
+  }
+}
+
+.contact-form {
+  &__button, &__button:hover {
+    color: variables.$color-white;
+  }
+
+  &__button {
+    background-color: variables.$color-green-light;
+    width: 100%;
+
+    &:hover {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0 0);
+    }
+  }
+}
+
+.page-preview {
+  &__button {
+      background-color: variables.$color-green-light;
+      color: variables.$color-white;
+
+      & span {
+        color: variables.$color-white;
+      }
+
+      &--about span:after {
+        content: '🖊️';
+      }
+
+      &--resume span:after {
+        content: '📄';
+      }
+
+      &--portfolio span:after {
+        content: '💼';
+      }
+  }
+}
+
+.portfolio-project {
+  &__button {
+    background-color: variables.$color-green-light;
+    color: variables.$color-white;
+    margin-top: 0;
+
+    & span {
+      color: variables.$color-white;
+    }
+
+    &--project {
+      margin-right: 1.6rem;
+    }
+
+    &--project span:after {
+      content: '🌐';
+    }
+
+    &--code span:after {
+      content: '👨‍💻';
+    }
+  }
+}
+
+.footer {
+  &__button {
+    border: 1px solid variables.$color-blue;
+    margin: 11.4rem 0 2.4rem;
+    padding: .6rem .8rem .8rem;
+    border-radius: 2px;
+
+    &-icon {
+        filter: invert(64%) sepia(74%) saturate(340%) hue-rotate(134deg) brightness(93%) contrast(85%);
+        height: 1.6rem;
+    }
+
+    &:hover {
+        background: variables.$color-blue;
+        cursor: pointer;
+        & > #footerButtonIcon {
+            filter: invert(100%) sepia(1%) saturate(7500%) hue-rotate(305deg) brightness(106%) contrast(103%);
+        }
+    }
+}
+}
